@@ -1,2 +1,1 @@
-#!/Bin/Sh
-find . -type f \( -name "*.sh" \)
+find . -type f -name "*.sh" -exec basename {} \;  | sed "s/\.sh//" | cat -e
